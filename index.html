@@ -3,227 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apps List</title>
+    <title>Flight Booking</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container">
+      <!-- HEADER -->
       <header>
         <nav>
           <ul>
-            <li><a href="http://" target="_blank">HOME</a></li>
-            <li><a href="http://" target="_blank">APPS</a></li>
-            <li><a href="http://" target="_blank">ACCOUNT</a></li>
+            <li><a href="http://" target="_blank">FLIGHTS</a></li>
+            <li><a href="http://" target="_blank">HOTELS</a></li>
+            <li><a href="http://" target="_blank">CARS</a></li>
           </ul>
-
-          <div class="categories">
-            <div>
-              <p>CATEGORIES</p>
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
-
-            <div class="menu">
-              <p>Beauty</p>
-              <p>Business</p>
-              <p>Education</p>
-              <p>Health & Fitness</p>
-              <p>Productivity</p>
-              <p>Sports</p>
-              <p>Travel & Local</p>
-            </div>
-          </div>
         </nav>
-
-        <div class="search-icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
       </header>
 
-      <!-- main -->
+      <!-- MAIN -->
       <main>
-        <h1>Recommended for you</h1>
-        <p>Based on your installs</p>
+        <div class="arrow">
+          <i class="fa-solid fa-plane-departure"></i>
+          <i class="fa-solid fa-plane-arrival"></i>
+        </div>
 
-        <section class="recommended-apps">
-          <!-- APP 1 -->
-          <div class="app app-1">
-            <div class="app-image">
-              <!-- insert image -->
+        <div class="page">
+          <div class="input-field origin">
+            <label for="origin">Origin</label>
+            <input
+              type="text"
+              name="origin"
+              id="origin"
+              placeholder="Bucharest | OTP"
+            />
+          </div>
+          <div class="input-field destination">
+            <label for="destination">Destination</label>
+            <input
+              type="text"
+              name="destination"
+              id="destination"
+              placeholder="Tenerife (Canary Islands) | TFS"
+            />
+          </div>
+
+          <div class="details">
+            <div class="input-field departure">
+              <label for="departure">Departure</label>
+              <input
+                type="text"
+                name="departure"
+                id="departure"
+                placeholder="03-26-2018"
+              />
             </div>
-            <div class="app-details">
-              <p class="app-name">30 Day Fit Challenge Workout</p>
-              <p class="app-creator">NorthPark Android</p>
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button>INSTALL APP</button>
+            <div class="input-field arrival">
+              <label for="arrival">Arrival</label>
+              <input
+                type="text"
+                name="arrival"
+                id="arrival"
+                placeholder="03-26-2018"
+              />
+            </div>
+            <div class="input-field passengers">
+              <label for="passengers">Passengers</label>
+              <input
+                type="text"
+                name="passengers"
+                id="passengers"
+                placeholder="2 Adults"
+              />
             </div>
           </div>
 
-          <!-- APP 2 -->
-          <div class="app app-2">
-            <div class="app-image">
-              <!-- insert image -->
-            </div>
-            <div class="app-details">
-              <p class="app-name">5 Health</p>
-              <p class="app-creator">S HealthSamsung Electronics Co</p>
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button>INSTALL APP</button>
-            </div>
-          </div>
-
-          <!-- APP 3 -->
-          <div class="app app-3">
-            <div class="app-image">
-              <!-- insert image -->
-            </div>
-            <div class="app-details">
-              <p class="app-name">Crab War</p>
-              <p class="app-creator">Appxplore Sdn Bhd</p>
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button>INSTALL APP</button>
-            </div>
-          </div>
-
-          <!-- APP 4 -->
-          <div class="app app-4">
-            <div class="app-image">
-              <!-- insert image -->
-            </div>
-            <div class="app-details">
-              <p class="app-name">Sandstorm: Pirate Wars</p>
-              <p class="app-creator">Ubisoft Entertainment</p>
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button>INSTALL APP</button>
-            </div>
-          </div>
-
-          <!-- APP 5 -->
-          <div class="app app-5">
-            <div class="app-image">
-              <!-- insert image -->
-            </div>
-            <div class="app-details">
-              <p class="app-name">Netflix</p>
-              <p class="app-creator">Netflix Inc.</p>
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button>INSTALL APP</button>
-            </div>
-          </div>
-
-          <!-- APP 6 -->
-          <div class="app app-6">
-            <div class="app-image">
-              <!-- insert image -->
-            </div>
-            <div class="app-details">
-              <p class="app-name">Jellyfish Hola 3D Theme</p>
-              <p class="app-creator">Holaverse</p>
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button>INSTALL APP</button>
-            </div>
-          </div>
-
-          <!-- APP 7 -->
-          <div class="app app-7">
-            <div class="app-image">
-              <!-- insert image -->
-            </div>
-            <div class="app-details">
-              <p class="app-name">Qatar Airways</p>
-              <p class="app-creator">Qatar Airways</p>
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button>INSTALL APP</button>
-            </div>
-          </div>
-
-          <!-- APP 8 -->
-          <div class="app app-8">
-            <div class="app-image">
-              <!-- insert image -->
-            </div>
-            <div class="app-details">
-              <p class="app-name">Microsoft Word</p>
-              <p class="app-creator">Microsoft Corporation</p>
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button>INSTALL APP</button>
-            </div>
-          </div>
-
-          <!-- APP 9 -->
-          <div class="app app-9">
-            <div class="app-image">
-              <!-- insert image -->
-            </div>
-            <div class="app-details">
-              <p class="app-name">Fruit Ninja Free</p>
-              <p class="app-creator">Halfbrick Studios</p>
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button>INSTALL APP</button>
-            </div>
-          </div>
-        </section>
+          <button>SEARCH</button>
+          <p class="note">Flexible on Dates?</p>
+        </div>
       </main>
     </div>
   </body>
